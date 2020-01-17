@@ -1,0 +1,324 @@
+.header {
+    /*la page principale*/
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(24, 23, 23, 0.5)), url("../images/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+#b_navigation {
+    visibility: hidden;
+}
+
+ul {
+    /*menu de navigation */
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.507);
+    position: fixed;
+}
+
+#hello p {
+    /*message hello sur l'acceul*/
+    color: white;
+    font-size: 3em;
+}
+
+#hello {
+    margin-top: 30vh;
+    align-self: center;
+}
+
+.texte {
+    /*  texte i am a programmer */
+    align-self: center;
+    font-size: 8em;
+    color: white;
+    height: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    /*le div des logos sous le titre*/
+    align-self: center;
+    margin-top: 15vh;
+}
+
+.logo i {
+    /*les logo des reseau*/
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+li a {
+    /*les liens de logo des reseau*/
+    opacity: 1;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+* {
+    /*margin 0 pour tt les elements */
+    margin: 0px;
+}
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2vh;
+}
+
+#title {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title:first-child {
+    align-self: center;
+    color: black;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contenue {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    flex-grow: 1;
+}
+
+#img {
+    width: 25vw;
+    height: 45vh;
+    border-radius: 15%;
+    margin: 1vw;
+}
+
+#text_about {
+    margin: 1vw;
+    margin-bottom: 15px;
+}
+
+#text_about p {
+    margin-bottom: 15px;
+}
+
+.competence_g {
+    height: 5vh;
+    BORDER-RADIUS: 5PX;
+    BACKGROUND: #F7F7F7;
+    BOX-SHADOW: 0PX2PX7PX RGBA(0, 0, 0, 0.5);
+    MARGIN-BOTTOM: 30PX;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.competence {
+    BORDER-RADIUS: 5PX;
+    BACKGROUND-COLOR: #1C1C1C;
+    WIDTH: 95%;
+    height: 3vh;
+    color: white;
+}
+
+.button_about {
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+
+#certif {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    margin-top: 2vh;
+    padding-bottom: 15px;
+}
+
+#certif1,
+#certif2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.div_chiant {
+    display: flex;
+    justify-content: center;
+}
+
+.p_div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+.p_sous {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+
+/* .owl-carousel .owl-item img {
+        width: 20%;
+    } */
+
+#certif .img_certification {
+    width: 200px;
+    height: 200PX;
+    border-radius: 100px;
+    margin: 5vh;
+}
+
+#portf {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.img_portfolio {
+    width: 30vw;
+    margin: 1vw;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    justify-content: center;
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin: 1vh;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    border-color: transparent;
+    height: 10vh;
+    width: 30vw;
+    align-self: center;
+}
+
+#contact p {
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+#message {
+    height: 10vh;
+}
+
+#submit_button {
+    align-self: center;
+    width: 7vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px 30px;
+}
+
+@media(max-width:750px) {
+    #nav_bar {
+        background: rgba(0, 0, 0, 0.507);
+    }
+    ul {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0px;
+        width: 100%;
+        margin-top: 6vh;
+    }
+    li a {
+        padding-bottom: 14px;
+        text-decoration: none;
+        width: max-content;
+        font-size: 2em;
+    }
+    .texte {
+        font-size: 3em;
+    }
+    #hello {
+        margin-top: 5vh;
+        align-self: center;
+    }
+    #contenue {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 3vh;
+        flex-grow: 1;
+    }
+    #img {
+        width: 70vw;
+        height: 50vh;
+        border-radius: 15%;
+        margin: 1vw;
+        align-self: center;
+    }
+    .competence_g {
+        margin-left: 5%;
+    }
+    #portf {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .img_portfolio {
+        width: 75vw;
+        margin: 1vw;
+        margin-bottom: 1vw;
+        align-self: center;
+        margin-bottom: 2vh;
+    }
+    .input {
+        width: 75%;
+    }
+    #submit_button {
+        width: 17vw;
+    }
+    #b_navigation {
+        position: fixed;
+        align-self: flex-end;
+        margin-right: 2vw;
+        font-size: 2em;
+        color: gray;
+    }
+}
